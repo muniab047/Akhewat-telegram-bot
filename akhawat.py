@@ -1,19 +1,9 @@
 from telegram import KeyboardButton , ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
+import requests
 
 TOKEN = "6625557391:AAEVaxlCfuBsZCA_eLu2TH_kl5O6oL1fMVI"
 
-
-STATE_ORIGINAL = 0
-STATE_COURSEMATERIALS =1
-STATE_SKILL_DEVELOPMENT=2
-STATE_ENTERTAINMENT =3
-STATE_GPA_CALCULATOR=4
-STATE_INTORMATION=5
-STATE_DATA_GATHERING =6
-STATE_ESTUDENT=7
-STATE_GC= 8
-STATE_ESTUDENT=9
 
 def start(update, context):
     show_orginal_buttons(update, context)
@@ -98,41 +88,42 @@ def show_appliedI(update, context):
 
      
 
-def find_caption(update, search_caption, context, query):
-     channel_username = 'https://t.me/andelus_database'
-     #history= context.bot.get__history(chat_id=channel_username)
-     #history = message.get_histrory
-     #history = update.message.chat.get_history()
 
-    #  history=[]
-    #  n=1
-    #  message_id= f'https://t.me/andelus_database/{n}'
-
-    #  while message_id:        
-    #      history.append(message_id)
-    #      n+=1
-    #      message_id= f'https://t.me/andelus_database/{n}'
-         
-         
-    #  matching_file=[]
-    #  for message in history:
-    #      if message.caption == search_caption:
-    #          matching_file.append(message.message_id)
-
-    #  for message_id in matching_file:
-     #context.bot.forward_document(chat_id=query.message.chat_id, from_chat_id=channel_username, message_id=message_id)
-     update.message.reply_photo(photo="https://t.me/andelus_database/4")
+     
     
 
 
 def button_click(update, context):
     query = update.callback_query
     button_clicked= query.data
+    user_name= "https://t.me/andelus_database"
+
+    message ='https://t.me/andelus_database/6'
     
+    
+
     if button_clicked == 'applied_I_course_outline':
+        id = [2,3,4,5,6]
+        user_name = "https://t.me/andelus_database"  # Replace with the actual username
+        chat_id= query.message.chat_id
+        for i in id:
+            file_path = f'{user_name}/{i}'
+
+            try:
+                query.message.bot.send_document(chat_id=chat_id, document=file_path)
+            except:
+                query.message.bot.send_photo(chat_id=chat_id, photo=file_path)
         
-        search_caption = 'applied_I_course_outline'
-        find_caption(update, search_caption, context, query)
+        
+
+
+
+
+
+
+   
+       
+            
    
        
 
