@@ -1,1 +1,1 @@
-# Jemea-academics-sector-bot-
+# Akhewat-telegram-bot
