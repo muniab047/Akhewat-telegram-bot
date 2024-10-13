@@ -13,15 +13,22 @@ Akhewat Telegram Bot is a smart Telegram bot designed to enhance students' learn
 - Virtual environment tool (optional but recommended)
 
 ### Project Structure
-Akhewat-telegram-bot/
-├── core/              # Core business logic  
-├── data/              # Data models or database handlers  
-├── infrastructure/    # service handling  
-├── main.py            # Entry point for the bot  
-├── postgres.py        # PostgreSQL integration  
-├── requirements.txt   # Project dependencies  
-├── vercel.json        # Vercel deployment configuration  
-└── README.md          # Project documentation  
+Akhewat-telegram-bot/  
+├── core/  
+    ├──const.py  
+├── data/
+    ├── button_id_map.py
+├── infrastructure/  
+    ├──handlers  
+       ├── keyboaed_button_handlers.py  
+       ├── state_handlers.py  
+    ├── bot_handlers.py  
+    ├── state_action_map.py  
+├── main.py              
+├── postgres.py        
+├── requirements.txt   
+├── vercel.json         
+└── README.md          
 
 
 ### Steps
