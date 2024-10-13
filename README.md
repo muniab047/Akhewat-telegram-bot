@@ -46,7 +46,7 @@ Akhewat-telegram-bot/
 ### Steps
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/Akhewat-telegram-bot.git
+    git clone https://github.com/muniab047/Akhewat-telegram-bot.git
     cd Akhewat-telegram-bot
     ```
 
