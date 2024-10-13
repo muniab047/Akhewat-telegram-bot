@@ -4,6 +4,13 @@
 ## Description
 Akhewat Telegram Bot is a smart Telegram bot designed to enhance students' learning experiences by providing easy access to a wide range of educational materials. From course outlines to textbooks and lecture videos, this bot serves as a comprehensive resource hub for students, helping them manage their studies effectively. To optimize data retrieval, the bot uses a Telegram channel as a database for file storage, allowing for faster access to resources by forwarding files rather than uploading them and PostgreSQL for persistent state managment.
 
+## Features
+- **Comprehensive Course Access**: Quickly retrieve course outlines, lecture notes, textbooks, exams, and video resources across various subjects.
+- **User-Friendly Interface**: Simple and intuitive commands for users to easily navigate and access materials.
+- **Real-Time Updates**: Leverages webhook integration with Telegram for instant notifications and responses.
+- **Persistent Data Storage**: Utilizes PostgreSQL for secure and reliable data management, ensuring users' access to the latest content.
+- **Multi-Subject Support**: Covers a wide range of subjects, catering to diverse academic needs and preferences.
+
 ## Installation Instructions
 
 ### Prerequisites
@@ -15,21 +22,21 @@ Akhewat Telegram Bot is a smart Telegram bot designed to enhance students' learn
 ### Project Structure
 ```markdown
 Akhewat-telegram-bot/  
-├── core/  
-    ├──const.py  
-├── data/
-    ├── button_id_map.py
-├── infrastructure/  
-    ├──handlers  
-       ├── keyboaed_button_handlers.py  
-       ├── state_handlers.py  
-    ├── bot_handlers.py  
-    ├── state_action_map.py  
-├── main.py              
-├── postgres.py        
-├── requirements.txt   
-├── vercel.json         
-└── README.md 
+        ├── core/  
+            ├──const.py  
+        ├── data/
+            ├── button_id_map.py
+        ├── infrastructure/  
+            ├──handlers  
+               ├── keyboaed_button_handlers.py  
+               ├── state_handlers.py  
+            ├── bot_handlers.py  
+            ├── state_action_map.py  
+        ├── main.py              
+        ├── postgres.py        
+        ├── requirements.txt   
+        ├── vercel.json         
+        └── README.md 
 
 ```        
 
@@ -69,9 +76,3 @@ The bot also responds to keyboard buttons and inline button clicks, facilitating
 ### Example Command
 Start the bot and interact with it by typing `/start` in your Telegram client.
 
-## Features
-- **Comprehensive Course Access**: Quickly retrieve course outlines, lecture notes, textbooks, exams, and video resources across various subjects.
-- **User-Friendly Interface**: Simple and intuitive commands for users to easily navigate and access materials.
-- **Real-Time Updates**: Leverages webhook integration with Telegram for instant notifications and responses.
-- **Persistent Data Storage**: Utilizes PostgreSQL for secure and reliable data management, ensuring users' access to the latest content.
-- **Multi-Subject Support**: Covers a wide range of subjects, catering to diverse academic needs and preferences.
