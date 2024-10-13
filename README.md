@@ -12,7 +12,7 @@ Akhewat Telegram Bot is a smart Telegram bot designed to enhance students' learn
 - **Multi-Subject Support**: Covers a wide range of subjects, catering to diverse academic needs and preferences.
 
 
-### Project Structure
+## Project Structure
 ```markdown
 Akhewat-telegram-bot/  
         ├── core/  
