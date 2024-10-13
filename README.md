@@ -11,13 +11,6 @@ Akhewat Telegram Bot is a smart Telegram bot designed to enhance students' learn
 - **Persistent Data Storage**: Utilizes PostgreSQL for secure and reliable data management, ensuring users' access to the latest content.
 - **Multi-Subject Support**: Covers a wide range of subjects, catering to diverse academic needs and preferences.
 
-## Installation Instructions
-
-### Prerequisites
-- Python 3.8 or higher
-- A Telegram bot token (can be obtained by talking to [BotFather](https://t.me/botfather) on Telegram)
-- PostgreSQL for the database
-- Virtual environment tool (optional but recommended)
 
 ### Project Structure
 ```markdown
@@ -40,6 +33,15 @@ Akhewat-telegram-bot/
 
 ```        
 
+
+
+## Installation Instructions
+
+### Prerequisites
+- Python 3.8 or higher
+- A Telegram bot token (can be obtained by talking to [BotFather](https://t.me/botfather) on Telegram)
+- PostgreSQL for the database
+- Virtual environment tool (optional but recommended)
 
 ### Steps
 1. Clone the repository:
